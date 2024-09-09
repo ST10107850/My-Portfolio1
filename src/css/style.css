@@ -968,6 +968,17 @@ aside .pages {
     margin: 70px auto 0 auto;
     background: rgba(255, 255, 255, 0.75);
 }
+@media (max-width: 768px) {
+    .logoipsum-slider {
+        height: 200px;
+    }
+
+    .logoipsum img {
+        margin: 0 auto; 
+        display: block; 
+        max-width: 100%;
+    }
+}
 
 
 /* ====== End of 1.4. logoipsum section ====== */

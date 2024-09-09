@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { CarouselProvider, Slider, Slide, Image } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
@@ -8,7 +9,31 @@ import logoipsum4 from "../assets/Images/home/logoipsum4.svg";
 import logoipsum5 from "../assets/Images/home/logoipsum5.svg";
 import logoipsum6 from "../assets/Images/home/logoipsum6.svg";
 
+const useWindowSize = () => {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return windowSize;
+};
+
 export const Logoipsum = () => {
+  const { width } = useWindowSize();
+  
+  // Set visibleSlides based on screen size
+  const visibleSlides = width < 768 ? 1 : width < 1024 ? 2 : 4;
+
   return (
     <section className="logoipsum">
       <div className="container">
@@ -22,7 +47,7 @@ export const Logoipsum = () => {
           totalSlides={6}
           isPlaying={true}
           infinite={true}
-          visibleSlides={4}  // Number of logos visible at a time
+          visibleSlides={visibleSlides}  // Dynamic number of slides visible at a time
         >
           <Slider className="logoipsum-slider" data-aos="zoom-in">
             <Slide index={0}><img src={logoipsum1} alt="logoipsum1" /></Slide>
