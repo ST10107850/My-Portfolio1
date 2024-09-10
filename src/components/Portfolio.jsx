@@ -1,4 +1,7 @@
 import { useState } from "react";
+import dronoticz from "../assets/Images/Portfolio/dronoticz.webp";
+import melulaClone from "../assets/Images/Portfolio/22.jpg";
+import JoziFood from "../assets/Images/Portfolio/6.jpg";
 import gallery1 from "../assets/Images/home/all-gallary-1.png";
 import gallery2 from "../assets/Images/home/all-gallary-2.png";
 import gallery3 from "../assets/Images/home/all-gallary-3.png";
@@ -62,7 +65,9 @@ export const Portfolio = () => {
               DESIGN
             </button>
             <button
-              className={`tablinks ${activeTab === "development" ? "active" : ""}`}
+              className={`tablinks ${
+                activeTab === "development" ? "active" : ""
+              }`}
               onClick={(e) => openImg(e, "development")}
             >
               DEVELOPMENT
@@ -72,24 +77,34 @@ export const Portfolio = () => {
           {/* All Tab Content */}
           <div
             id="all"
-            className={`tabcontent ${activeTab === "all" ? "block" : "hidden"} `}data-aos="fade-up"
+            className={`tabcontent ${
+              activeTab === "all" ? "block" : "hidden"
+            } `}
+            data-aos="fade-up"
           >
             <div className="flex flex-center" data-aos="fade-up">
               <div className="flex w-100">
                 <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card">
-                    <img src={gallery1} alt="Project 1" />
+                    <a href="https://dronoticz.vercel.app/">
+                      <img src={dronoticz} alt="Project 1" />
+                    </a>
                   </figure>
                 </div>
                 <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card" data-aos="fade-up">
-                    <img src={gallery2} alt="Project 2" />
+                    <a href="https://melula-clone-xi.vercel.app/">
+                      <img src={melulaClone} alt="Project 2" />
+                    </a>
                   </figure>
                 </div>
                 <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card">
-                    <img src={gallery3} alt="Project 3" />
+                  <a href="https://jozi-food-maker.vercel.app//">
+                    <img src={JoziFood} alt="Project 3" />
+                    </a>
                   </figure>
+
                 </div>
                 <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card">
@@ -123,7 +138,9 @@ export const Portfolio = () => {
           {/* Design Tab Content */}
           <div
             id="design"
-            className={`tabcontent ${activeTab === "design" ? "block" : "hidden"}`}
+            className={`tabcontent ${
+              activeTab === "design" ? "block" : "hidden"
+            }`}
           >
             <div className="flex flex-center" data-aos="fade-up">
               <div className="flex w-100">
@@ -154,7 +171,9 @@ export const Portfolio = () => {
           {/* Development Tab Content */}
           <div
             id="development"
-            className={`tabcontent ${activeTab === "development" ? "block" : "hidden"}`}
+            className={`tabcontent ${
+              activeTab === "development" ? "block" : "hidden"
+            }`}
           >
             <div className="flex flex-center" data-aos="fade-up">
               <div className="flex w-100">
