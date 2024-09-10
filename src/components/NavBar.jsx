@@ -34,12 +34,12 @@ export const NavBar = () => {
               </a>
             </li>
             <li>
-              <a className="nav-link" href="/about">
+              <a className="nav-link" href="#about">
                 About
               </a>
             </li>
             <li>
-              <a className="nav-link" href="/contact">
+              <a className="nav-link" href="#contact">
                 Contact
               </a>
             </li>
@@ -58,25 +58,30 @@ export const NavBar = () => {
                 aria-labelledby="navbarScrollingDropdown"
               >
                 <li>
-                  <a className="dropdown-item" href="/pricing">
+                  <a className="dropdown-item" href="#technologies">
                     Technologies I Use
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/portfolio">
+                  <a className="dropdown-item" href="#portfolio">
                     Portfolio
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/services">
+                  <a className="dropdown-item" href="#services">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/team">
+                  <a className="dropdown-item" href="#work">
                     How I Work
                   </a>
                 </li>
+                <li>
+                    <a className="nav-link" href="#connect">
+                    Get In Touch
+                    </a>
+                  </li>
               </ul>
             </li>
           </ul>
@@ -107,17 +112,17 @@ export const NavBar = () => {
         <div>
           <ul>
             <li>
-              <a className="nav-link active" href="/index">
+              <a className="nav-link active" href="/">
                 Home
               </a>
             </li>
             <li>
-              <a className="nav-link" href="/about">
+              <a className="nav-link" href="#about">
                 About
               </a>
             </li>
             <li>
-              <a className="nav-link" href="/contact">
+              <a className="nav-link" href="#contact">
                 Contact
               </a>
             </li>
@@ -133,23 +138,28 @@ export const NavBar = () => {
               <div className={`collapse ${isMoreOpen ? "show" : ""}`}>
                 <ul>
                   <li>
-                    <a className="nav-link" href="/services">
+                    <a className="nav-link" href="#technologies">
                       Technologies I Use
                     </a>
                   </li>
                   <li>
-                    <a className="nav-link" href="/pricing">
+                    <a className="nav-link" href="#portfolio">
                       Portfolio
                     </a>
                   </li>
                   <li>
-                    <a className="nav-link" href="/portfolio">
+                    <a className="nav-link" href="#service">
                       Services
                     </a>
                   </li>
                   <li>
-                    <a className="nav-link" href="/team">
+                    <a className="nav-link" href="#work">
                       How I Work
+                    </a>
+                  </li>
+                  <li>
+                    <a className="nav-link" href="#connect">
+                    Get In Touch
                     </a>
                   </li>
                 </ul>
@@ -159,18 +169,7 @@ export const NavBar = () => {
         </div>
       </aside>
 
-      {/* Search Bar */}
-      <div className={`search-bar ${isSearchBarOpen ? "open" : ""}`}>
-        <div className="btn_hover1" onClick={toggleSearchBar}>
-          <i className="fa-solid fa-xmark"></i>
-        </div>
-        <form method="search" action="#">
-          <input type="search" required placeholder="Search..." />
-          <button type="submit" className="btn_hover1">
-            Search
-          </button>
-        </form>
-      </div>
+      
 
       {/* Right Sidebar */}
       <section
@@ -189,7 +188,7 @@ export const NavBar = () => {
           user-friendly web applications. With a strong foundation in
           JavaScript, React, and backend development,......
         </p>
-        <a href="/about" className="btn_hover1">
+        <a href="#about" className="btn_hover1">
           Discover More
         </a>
         <hr />
@@ -204,7 +203,7 @@ export const NavBar = () => {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=samuelnhlakanipho08@gmail.com">
               <i className="fa-regular fa-envelope"></i>
             </a>
             <a

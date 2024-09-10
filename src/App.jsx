@@ -19,9 +19,9 @@ import { Work } from "./components/Work";
 import { GetInTouch } from "./components/GetInTouch";
 import { Footer } from "./components/Footer";
 import TestButton from "./components/TestButton";
+import { Contact } from "./components/Contact";
 
 function App() {
-
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -35,17 +35,30 @@ function App() {
         <NavBar />
         <Hero />
         <Card />
-        <Logoipsum />
-        <About />
-        <Portfolio />
-        <Service />
-        <Work />
-        <GetInTouch />
+        <section id="technologies">
+          <Logoipsum />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="portfolio">
+          <Portfolio />
+        </section>
+        <section id="service">
+          <Service />
+        </section>
+        <section id="work">
+          <Work />
+        </section>
+        <section id="connect">
+          <GetInTouch />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
         <Footer />
-
-        
       </div>
-      <TestButton/>
+      <TestButton />
     </div>
   );
 }

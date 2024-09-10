@@ -1712,7 +1712,172 @@ aside .pages {
 
 
 /* ====== End of 1.12. Get In touch section ====== */
+/* ====== 1.8. Experience section ====== */
 
+.experience {
+    background-image: url("../assets/Images/bg/experience_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 120px 0;
+    position: relative;
+    margin-top: -1px;
+}
+
+.experience::before {
+    position: absolute;
+    content: "";
+    top: 26rem;
+    background-image: url("../assets/Images/bg/experience_cercle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 30%;
+    height: 39%;
+    left: 32%;
+}
+
+.experience h5 {
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.experience h2 {
+    color: #ffffff;
+}
+
+.experience p {
+    color: #d3c9c1;
+}
+
+.experience .col-lg-8 p {
+    padding: 0 221px 0 0;
+}
+
+.experience .experience-hr1 {
+    opacity: 1.25;
+    height: 1px;
+    color: #b520a3;
+    width: 60px;
+    border: 1px solid;
+}
+
+.experience hr {
+    width: 100%;
+    opacity: 1.25;
+    height: 1px;
+    color: #461f72;
+    border: 1px solid;
+    margin: 35px 0;
+}
+
+.experience .btn_hover1 {
+    padding: 15px 40px;
+}
+
+.experience .btn_hover2 {
+    padding: 15px 30px;
+    border: 1px solid #ff7527;
+}
+
+.experience .col-lg-6 {
+    z-index: 1;
+}
+
+.experience_mask figure {
+    width: fit-content;
+    clip-path: circle(47% at 50% 50%);
+    padding: 6px;
+    background: linear-gradient(11deg, #7436bb 0.01%, #b520a3 100%);
+    transition: all 0.8s ease;
+}
+
+.experience_mask figure:hover {
+    transform: scale(1.05);
+    transition: all 0.8s ease;
+}
+
+.experience_mask img {
+    width: 100%;
+    clip-path: circle(47% at 50% 50%);
+}
+
+.experience-hr {
+    color: #ffffff;
+    position: absolute;
+    bottom: -220px;
+    left: -45px;
+    bottom: 25px;
+    rotate: -90deg;
+}
+
+.experience-hr h6 {
+    letter-spacing: 3.72px;
+    text-transform: uppercase;
+}
+
+.experience-hr hr {
+    opacity: 1.25;
+    height: 1px;
+    color: #ffffffbf;
+    width: 60px;
+    border: 1px solid;
+    margin: 0;
+}
+
+
+.ex-card {
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 23px 30px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px 20px 20px 20px;
+    z-index: 1;
+}
+
+.ex-card:hover {
+    background: linear-gradient(11deg, #7436bb 0.01%, #b520a3 100%);
+    transform: scale(1.05) !important;
+    transition: all 0.4s ease !important;
+}
+
+.ex-card:hover h4 {
+    color: #ffffff;
+}
+
+.ex-card:hover p {
+    color: #ffffff;
+}
+
+.ex-card .flex {
+    border-radius: 50%;
+    background: linear-gradient(11deg, #7436bb 0.01%, #b520a3 100%);
+    color: #ffffff;
+    width: 115px;
+    padding: 29px 0px;
+}
+
+.ex-card:hover.ex-card .flex {
+    background: #ffffff;
+}
+
+.ex-card:hover.ex-card h3 {
+    color: #7436bb !important;
+}
+
+.ex-card div:last-child {
+    width: 100%;
+}
+
+.ex-card h4 {
+    color: #231f20;
+}
+
+.ex-card p {
+    color: #767676;
+    margin-top: 10px;
+}
+
+/* ====== End of 1.8. Experience section ====== */
 
 
 /* ====== 1.14. Footer section ====== */
