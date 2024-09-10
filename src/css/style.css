@@ -1203,31 +1203,53 @@ aside .pages {
     margin-bottom: 60px;
   }
 
-.gallary img {
+  .gallery-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(143, 65, 65, 0.2); /* Card shadow effect */
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-card img {
     width: 350px;
     height: 400px;
     object-fit: cover;
     border-radius: 15px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease-in-out;
-}
-
-
-.gallary img:hover {
+  }
+  
+  .gallery-card:hover img {
     transform: scale(1.05);
-}
-
-.gallery-card {
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(143, 65, 65, 0.2); /* Card shadow effect */
-    margin-bottom: 30px;
-    transition: transform 0.3s ease;
-}
-
-.gallery-card:hover {
-    transform: translateY(-10px); /* Lift the card on hover */
-}
+  }
+  
+  .gallery-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 15px; /* Match image border radius */
+  }
+  
+  .gallery-card:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  
 
 .w-33, .w-66 {
     padding: 10px;

@@ -2,6 +2,7 @@ import { useState } from "react";
 import dronoticz from "../assets/Images/Portfolio/dronoticz.webp";
 import melulaClone from "../assets/Images/Portfolio/22.jpg";
 import JoziFood from "../assets/Images/Portfolio/6.jpg";
+import cineScope from "../assets/Images/Portfolio/cineScope.jpg";
 import gallery1 from "../assets/Images/home/all-gallary-1.png";
 import gallery2 from "../assets/Images/home/all-gallary-2.png";
 import gallery3 from "../assets/Images/home/all-gallary-3.png";
@@ -88,6 +89,7 @@ export const Portfolio = () => {
                   <figure className="gallery-card">
                     <a href="https://dronoticz.vercel.app/">
                       <img src={dronoticz} alt="Project 1" />
+                      <figcaption className="overlay">Dronoticz</figcaption>
                     </a>
                   </figure>
                 </div>
@@ -95,20 +97,24 @@ export const Portfolio = () => {
                   <figure className="gallery-card" data-aos="fade-up">
                     <a href="https://melula-clone-xi.vercel.app/">
                       <img src={melulaClone} alt="Project 2" />
+                      <figcaption className="overlay">Melula Clone</figcaption>
                     </a>
                   </figure>
                 </div>
                 <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card">
-                  <a href="https://jozi-food-maker.vercel.app//">
-                    <img src={JoziFood} alt="Project 3" />
+                    <a href="https://jozi-food-maker.vercel.app//">
+                      <img src={JoziFood} alt="Project 3" />
+                      <figcaption className="overlay">Jozi Food Maker</figcaption>
                     </a>
                   </figure>
-
                 </div>
                 <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card">
-                    <img src={gallery4} alt="Project 4" />
+                    <a href="https://cine-scope-five.vercel.app/">
+                      <img src={cineScope} alt="Project 4" />
+                      <figcaption className="overlay">Cine Scope</figcaption>
+                    </a>
                   </figure>
                 </div>
                 <div className="w-33" data-aos="fade-up">
