@@ -1,4 +1,4 @@
-import Exp from "../assets/Images/home/experience.png";
+import Exp from "../assets/Images/slider/unnamed.jpg";
 
 export const Contact = () => {
   return (
