@@ -6,7 +6,7 @@ export const Service = () => {
   return (
     <section className="service">
             <div className="service-1">
-                <div className="container animate__animated animate__fadeInUp animate__delay-1.5s animate__zoomIn-custom-duration">
+                <div className="container">
                     <div className="service-data" data-aos="fade-down">
                         <div className="w-66">
                             <div className="flex gap-1">
@@ -32,7 +32,7 @@ export const Service = () => {
                             </p>
                             <a href="services.html">Read more <i className="fa-solid fa-arrow-right"></i></a>
                         </div>
-                        <div className="service-card animate__animated animate__fadeInDown animate__delay-1.5s animate__zoomIn-custom-duration" data-aos="fade-up">
+                        <div className="service-card" data-aos="fade-up">
                             <figure><img src={slider2} alt="backend"/></figure>
                             <h3>Backend Development</h3>
                             <p>

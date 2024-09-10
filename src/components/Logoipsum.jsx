@@ -8,6 +8,7 @@ import logoipsum3 from "../assets/Images/home/logoipsum3.svg";
 import logoipsum4 from "../assets/Images/home/logoipsum4.svg";
 import logoipsum5 from "../assets/Images/home/logoipsum5.svg";
 import logoipsum6 from "../assets/Images/home/logoipsum6.svg";
+import logoipsum7 from "../assets/Images/home/logoipsum7.svg";
 
 const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState({
@@ -30,8 +31,7 @@ const useWindowSize = () => {
 
 export const Logoipsum = () => {
   const { width } = useWindowSize();
-  
-  // Set visibleSlides based on screen size
+
   const visibleSlides = width < 768 ? 1 : width < 1024 ? 2 : 4;
 
   return (
@@ -44,18 +44,20 @@ export const Logoipsum = () => {
         <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={50}
-          totalSlides={6}
+          totalSlides={7}
           isPlaying={true}
           infinite={true}
           visibleSlides={visibleSlides}  // Dynamic number of slides visible at a time
         >
           <Slider className="logoipsum-slider" data-aos="zoom-in">
-            <Slide index={0}><img src={logoipsum1} alt="logoipsum1" /></Slide>
+            <Slide index={0}><img src={logoipsum1} alt="logoipsum1"/></Slide>
             <Slide index={1}><img src={logoipsum2} alt="logoipsum2" /></Slide>
             <Slide index={2}><img src={logoipsum3} alt="logoipsum3" /></Slide>
             <Slide index={3}><img src={logoipsum4} alt="logoipsum4" /></Slide>
+            <Slide index={6}><img src={logoipsum7} alt="logoipsum7" /></Slide>
             <Slide index={4}><img src={logoipsum5} alt="logoipsum5" /></Slide>
             <Slide index={5}><img src={logoipsum6} alt="logoipsum6" /></Slide>
+          
           </Slider>
         </CarouselProvider>
         <hr className="hr2" />

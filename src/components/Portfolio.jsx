@@ -74,44 +74,44 @@ export const Portfolio = () => {
             id="all"
             className={`tabcontent ${activeTab === "all" ? "block" : "hidden"} `}data-aos="fade-up"
           >
-            <div className="flex flex-center">
+            <div className="flex flex-center" data-aos="fade-up">
               <div className="flex w-100">
-                <div className="w-33">
+                <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card">
                     <img src={gallery1} alt="Project 1" />
                   </figure>
                 </div>
-                <div className="w-33">
-                  <figure className="gallery-card">
+                <div className="w-33" data-aos="fade-up">
+                  <figure className="gallery-card" data-aos="fade-up">
                     <img src={gallery2} alt="Project 2" />
                   </figure>
                 </div>
-                <div className="w-33">
+                <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card">
                     <img src={gallery3} alt="Project 3" />
                   </figure>
                 </div>
-                <div className="w-33">
+                <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card">
                     <img src={gallery4} alt="Project 4" />
                   </figure>
                 </div>
-                <div className="w-33">
+                <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card">
                     <img src={gallery5} alt="Development 1" />
                   </figure>
                 </div>
-                <div className="w-33">
+                <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card">
                     <img src={gallery6} alt="Development 2" />
                   </figure>
                 </div>
-                <div className="w-33">
+                <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card">
                     <img src={gallery7} alt="Development 2" />
                   </figure>
                 </div>
-                <div className="w-33">
+                <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card">
                     <img src={gallery8} alt="Development 2" />
                   </figure>
@@ -125,7 +125,7 @@ export const Portfolio = () => {
             id="design"
             className={`tabcontent ${activeTab === "design" ? "block" : "hidden"}`}
           >
-            <div className="flex flex-center">
+            <div className="flex flex-center" data-aos="fade-up">
               <div className="flex w-100">
                 <div className="w-33">
                   <figure className="gallery-card">
@@ -156,7 +156,7 @@ export const Portfolio = () => {
             id="development"
             className={`tabcontent ${activeTab === "development" ? "block" : "hidden"}`}
           >
-            <div className="flex flex-center">
+            <div className="flex flex-center" data-aos="fade-up">
               <div className="flex w-100">
                 <div className="w-33">
                   <figure className="gallery-card">

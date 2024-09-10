@@ -5,7 +5,6 @@ export const Work = () => {
         <div
           className="work-para text-center"
           data-aos="fade-up"
-          data-aos-delay="1000"
         >
           <h5>HOW I WORK</h5>
           <h2 className="h2_margin">
@@ -21,7 +20,7 @@ export const Work = () => {
           <hr />
           <h6>Steps to Success</h6>
         </div>
-        <div className="work-line flex flex-center gap-1 flex-wrap p-relative animate__animated animate__zoomIn animate__delay-1.5s animate__zoomIn-custom-duration">
+        <div className="work-line flex flex-center gap-1 flex-wrap p-relative">
           <div data-aos="zoom-in">
             <h2>01.</h2>
             <h4>Initial Consultation</h4>
@@ -40,7 +39,7 @@ export const Work = () => {
           </div>
         </div>
         <div
-          className="flex flex-center animate__animated animate__zoomIn animate__delay-1.5s animate__zoomIn-custom-duration"
+          className="flex flex-center"
           data-aos="zoom-in"
         >
           <a href="contact.html" className="btn_hover2">

@@ -6,7 +6,7 @@ export const About = () => {
     <section className="about">
       <div className="container">
         <div className="about-data flex-sb">
-          <div className="w-50" data-aos="fade-up" data-aos-delay="1200">
+          <div className="w-50" data-aos="fade-up">
             <div className="flex about-title">
               <hr />
               <h5>ABOUT ME</h5>
@@ -45,7 +45,6 @@ export const About = () => {
           <div
             className="about-imgs flex flex-center w-50"
             data-aos="fade-down"
-            data-aos-delay="1500" // Adjust delay as needed
           >
             <div>
               <figure>

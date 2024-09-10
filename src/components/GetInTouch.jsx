@@ -8,7 +8,6 @@ export const GetInTouch = () => {
           <div
             className="w-50 text-center"
             data-aos="fade-up"
-            data-aos-delay="1200"
           >
             <div className="flex gap-2">
               <hr className="faq-hr1" />
