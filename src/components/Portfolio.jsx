@@ -124,6 +124,7 @@ export const Portfolio = () => {
                   <figure className="gallery-card">
                     <a href="https://property-two-mu.vercel.app/">
                       <img src={Property} alt="Development 1" />
+                      <figcaption className="overlay">Property Web Applicatio</figcaption>
                     </a>
                   </figure>
                 </div>
