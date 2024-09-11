@@ -2,6 +2,7 @@ import { useState } from "react";
 import dronoticz from "../assets/Images/Portfolio/dronoticz.webp";
 import melulaClone from "../assets/Images/Portfolio/22.jpg";
 import JoziFood from "../assets/Images/Portfolio/6.jpg";
+import Property from "../assets/Images/Portfolio/property.jpg";
 import cineScope from "../assets/Images/Portfolio/cineScope.jpg";
 import gallery1 from "../assets/Images/home/all-gallary-1.png";
 import gallery2 from "../assets/Images/home/all-gallary-2.png";
@@ -105,7 +106,9 @@ export const Portfolio = () => {
                   <figure className="gallery-card">
                     <a href="https://jozi-food-maker.vercel.app//">
                       <img src={JoziFood} alt="Project 3" />
-                      <figcaption className="overlay">Jozi Food Maker</figcaption>
+                      <figcaption className="overlay">
+                        Jozi Food Maker
+                      </figcaption>
                     </a>
                   </figure>
                 </div>
@@ -119,7 +122,9 @@ export const Portfolio = () => {
                 </div>
                 <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card">
-                    <img src={gallery5} alt="Development 1" />
+                    <a href="https://property-two-mu.vercel.app/">
+                      <img src={Property} alt="Development 1" />
+                    </a>
                   </figure>
                 </div>
                 <div className="w-33" data-aos="fade-up">
