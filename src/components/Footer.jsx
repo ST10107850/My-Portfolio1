@@ -34,16 +34,16 @@ export const Footer = () => {
                 <h4>Quick Links</h4>
                 <ul className="flex flex-col gap-2 flex-start">
                   <li>
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                   </li>
                   <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                   </li>
                   <li>
-                    <a href="#">Portfolio</a>
+                    <a href="#portfolio">Portfolio</a>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -51,13 +51,13 @@ export const Footer = () => {
                 <ul className="flex flex-col gap-2 flex-start">
                   
                   <li>
-                    <a href="#"> Technologies I Use</a>
+                    <a href="#technologies"> Technologies I Use</a>
                   </li>
                   <li>
-                    <a href="#">Services</a>
+                    <a href="#services">Services</a>
                   </li>
                   <li>
-                    <a href="#">How I Work</a>
+                    <a href="#work">How I Work</a>
                   </li>
                 </ul>
               </div>

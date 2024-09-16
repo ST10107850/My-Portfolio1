@@ -34,10 +34,10 @@ export const About = () => {
               </h5>
             </div>
             <div className="flex gap-2 mt-30">
-              <a href="projects.html" className="btn_hover1">
+              <a href="#portfolio" className="btn_hover1">
                 View My Work
               </a>
-              <a href="contact.html" className="btn_hover2">
+              <a href="#contact" className="btn_hover2">
                 Get in Touch
               </a>
             </div>

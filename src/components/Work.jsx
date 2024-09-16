@@ -42,7 +42,7 @@ export const Work = () => {
           className="flex flex-center"
           data-aos="zoom-in"
         >
-          <a href="contact.html" className="btn_hover2">
+          <a href="#contact" className="btn_hover2">
             Get in Touch
           </a>
         </div>

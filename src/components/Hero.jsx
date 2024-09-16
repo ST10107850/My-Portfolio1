@@ -16,8 +16,8 @@ export const Hero = () => {
             <h1>Hello, I'm Nhlakanipho Samuel Nsundwane</h1>
             <h3>Crafting Innovative Solutions in Software Development</h3>
             <div className="center-btn flex">
-              <a href="services.html" className="btn_hover1">Hire Me</a>
-              <a href="about.html" className="btn_hover2">My Projects</a>
+              <a href="#contact" className="btn_hover1">Hire Me</a>
+              <a href="#portfolio" className="btn_hover2">My Projects</a>
             </div>
           </div>
         </div>

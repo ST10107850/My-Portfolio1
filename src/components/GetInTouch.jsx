@@ -1,14 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 export const GetInTouch = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_tn6cwfs",
+        "template_cl04zmc",
+        {
+          name: name,
+          email: email,
+          message: message,
+        },
+        "H2dK93q-QeEn6GhiQ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSuccess(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section className="faq p-relative">
       <div className="container">
         <div className="flex flex-wrap">
-          <div
-            className="w-50 text-center"
-            data-aos="fade-up"
-          >
+          <div className="w-50 text-center" data-aos="fade-up">
             <div className="flex gap-2">
               <hr className="faq-hr1" />
               <h5>Stay Connected</h5>
@@ -29,8 +57,7 @@ export const GetInTouch = () => {
                 id="footer-form"
                 data-aos="zoom-in"
                 data-aos-delay="400"
-                action="mailto:yourname@gmail.com"
-                method="POST"
+                onSubmit={sendEmail}
               >
                 <div id="footer-message"></div>
 
@@ -38,6 +65,8 @@ export const GetInTouch = () => {
                 <input
                   type="text"
                   name="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   required
                   placeholder="Enter your name"
                 />
@@ -46,6 +75,8 @@ export const GetInTouch = () => {
                 <input
                   type="email"
                   name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
                   placeholder="Enter your email"
                 />
@@ -53,12 +84,20 @@ export const GetInTouch = () => {
                 {/* Textarea for message */}
                 <textarea
                   name="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   required
                   placeholder="Enter your message"
                 ></textarea>
 
                 {/* Submit button */}
                 <button type="submit">Send Message</button>
+
+                {success && (
+                  <p className="mt-2 text-white">
+                    Your message has been sent successfully!
+                  </p>
+                )}
               </form>
             </div>
           </div>
