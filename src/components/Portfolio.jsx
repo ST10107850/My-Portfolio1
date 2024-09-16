@@ -116,7 +116,13 @@ export const Portfolio = () => {
                   <figure className="gallery-card">
                     <a href="https://cine-scope-five.vercel.app/">
                       <img src={cineScope} alt="Project 4" />
-                      <figcaption className="overlay">Cine Scope</figcaption>
+                      <div className="overlay flex flex-col">
+                        <figcaption>Cine Scope</figcaption>
+                        <div className="flex">
+                          <a href="">GitHub</a>
+                          <a href="">Live View</a>
+                        </div>
+                      </div>
                     </a>
                   </figure>
                 </div>
