@@ -104,7 +104,7 @@ export const Portfolio = () => {
                 </div>
                 <div className="w-33" data-aos="fade-up">
                   <figure className="gallery-card">
-                    <a href="https://jozi-food-maker.vercel.app//">
+                    <a href="https://jozi-food.vercel.app/">
                       <img src={JoziFood} alt="Project 3" />
                       <figcaption className="overlay">
                         Jozi Food Maker
@@ -124,7 +124,9 @@ export const Portfolio = () => {
                   <figure className="gallery-card">
                     <a href="https://property-two-mu.vercel.app/">
                       <img src={Property} alt="Development 1" />
-                      <figcaption className="overlay">Property Web Applicatio</figcaption>
+                      <figcaption className="overlay">
+                        Property Web Applicatio
+                      </figcaption>
                     </a>
                   </figure>
                 </div>
