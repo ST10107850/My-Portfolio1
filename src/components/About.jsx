@@ -11,7 +11,7 @@ export const About = () => {
               <hr />
               <h5>ABOUT ME</h5>
             </div>
-            <h2>Empowering Your Ideas wit Innovative Software Solutions</h2>
+            <h2>Empowering Your Ideas with Innovative Software Solutions</h2>
             <p>
               I am a passionate software developer specializing in creating
               dynamic, user-friendly web applications. With a strong foundation
